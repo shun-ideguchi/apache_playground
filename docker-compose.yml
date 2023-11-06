@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./infra/amazonlinux/Dockerfile
+    volumes:
+      - ./infra/apache/httpd.conf:/etc/httpd/conf/httpd.conf
+      - ./html:/var/www/html
+    ports:
+      - 8080:80
+    container_name: apache_playground_amazonlinux
