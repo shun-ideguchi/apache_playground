@@ -21,5 +21,5 @@ RUN useradd "ec2-user" && echo "ec2-user ALL=NOPASSWD: ALL" >> /etc/sudoers
 # start apache
 CMD ["apachectl", "-D", "FOREGROUND"]
 
-# change root directory
+# move root directory
 WORKDIR ${root_dir}
