@@ -1,2 +1,4 @@
 DirectoryIndex alias.html
-Options -Indexes
+# Options -Indexes
+
+Redirect /alias-test/redirect-test /alias-test
